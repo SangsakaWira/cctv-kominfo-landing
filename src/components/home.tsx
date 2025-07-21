@@ -68,15 +68,16 @@ const Home = () => {
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center space-x-3">
             <div className="relative">
-              <ShieldIcon className="h-8 w-8 text-blue-600" />
+              {/* <ShieldIcon className="h-8 w-8 text-blue-600" /> */}
+              <img src="/public/logo.jpeg" className="h-12"></img>
               <div className="absolute -top-1 -right-1 w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
             </div>
             <div>
               <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                SmartCity Surveillance
+               Smart CCTV System
               </h1>
               <p className="text-xs text-muted-foreground">
-                Advanced Security Monitoring
+                Sistem Pemantauan 24 Jam Berbasis Artificial Intelligence
               </p>
             </div>
           </div>
@@ -303,15 +304,22 @@ const Home = () => {
       {/* Hero Section */}
       {!isAuthenticated && (
         <section className="relative overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 via-purple-600/20 to-cyan-600/20"></div>
+          <div className="absolute inset-0">
+            <img
+              src="/public/ampera.jpg" // Ganti dengan path gambar kamu
+              alt="Background"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="absolute inset-0 bg-black/50" />
           <div className="container mx-auto px-4 py-16 relative">
             <div className="text-center max-w-4xl mx-auto">
-              <h2 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-cyan-600 bg-clip-text text-transparent">
-                Protecting Our City
+              <h2 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-cyan-600 bg-clip-text text-white">
+                Sistem Pemantaun CCTV
                 <br />
-                24/7 Surveillance
+                24/7 Pemantauan
               </h2>
-              <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+              <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto text-white">
                 Advanced AI-powered surveillance system monitoring our city's
                 safety with real-time analytics, intelligent threat detection,
                 and rapid emergency response capabilities.
@@ -321,24 +329,24 @@ const Home = () => {
                 <Card className="bg-white/10 backdrop-blur-sm border-white/20">
                   <CardContent className="p-6 text-center">
                     <EyeIcon className="h-12 w-12 text-blue-500 mx-auto mb-4" />
-                    <h3 className="text-2xl font-bold mb-2">150+</h3>
-                    <p className="text-muted-foreground">Active Cameras</p>
+                    <h3 className="text-2xl font-bold mb-2 text-white">150+</h3>
+                    <p className="text-muted-foreground text-white">Active Cameras</p>
                   </CardContent>
                 </Card>
 
                 <Card className="bg-white/10 backdrop-blur-sm border-white/20">
                   <CardContent className="p-6 text-center">
                     <TrendingUpIcon className="h-12 w-12 text-green-500 mx-auto mb-4" />
-                    <h3 className="text-2xl font-bold mb-2">87%</h3>
-                    <p className="text-muted-foreground">Safety Score</p>
+                    <h3 className="text-2xl font-bold mb-2 text-white">87%</h3>
+                    <p className="text-muted-foreground text-white">Safety Score</p>
                   </CardContent>
                 </Card>
 
                 <Card className="bg-white/10 backdrop-blur-sm border-white/20">
                   <CardContent className="p-6 text-center">
                     <UsersIcon className="h-12 w-12 text-purple-500 mx-auto mb-4" />
-                    <h3 className="text-2xl font-bold mb-2">4.2min</h3>
-                    <p className="text-muted-foreground">Response Time</p>
+                    <h3 className="text-2xl font-bold mb-2 text-white">4.2min</h3>
+                    <p className="text-muted-foreground text-white">Response Time</p>
                   </CardContent>
                 </Card>
               </div>
@@ -605,7 +613,7 @@ const Home = () => {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <ShieldIcon className="h-6 w-6 text-blue-600" />
-                <span className="font-bold text-lg">SmartCity</span>
+                <span className="font-bold text-lg">Smart CCTV</span>
               </div>
               <p className="text-sm text-muted-foreground">
                 Advanced surveillance technology protecting our community with
