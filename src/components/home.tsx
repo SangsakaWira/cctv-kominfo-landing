@@ -69,7 +69,7 @@ const Home = () => {
           <div className="flex items-center space-x-3">
             <div className="relative">
               {/* <ShieldIcon className="h-8 w-8 text-blue-600" /> */}
-              <img src="/public/logo.jpeg" className="h-12"></img>
+              <img src="/logo.jpeg" className="h-12"></img>
               <div className="absolute -top-1 -right-1 w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
             </div>
             <div>
@@ -306,7 +306,7 @@ const Home = () => {
         <section className="relative overflow-hidden">
           <div className="absolute inset-0">
             <img
-              src="/public/ampera.jpg" // Ganti dengan path gambar kamu
+              src="/ampera.jpg" // Ganti dengan path gambar kamu
               alt="Background"
               className="w-full h-full object-cover"
             />
